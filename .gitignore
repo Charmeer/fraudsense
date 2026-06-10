@@ -1,12 +1,43 @@
-﻿# Ignore auto-checkpoint and editor files
+﻿# Python cache and environment files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+ENV/
+.venv/
+.venvs/
+pip-wheel-metadata/
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Jupyter / notebook artifacts
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 .virtual_documents/
 
-# Ignore generated artifacts and large files
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large generated and data/model artifacts
 fraud analytics.pbix
+models/
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.onnx
+*.pbix
+
+# Specific large datasets that should not be tracked in git
 CSVs/powerbi_export.csv
 data/creditcard.csv
 data/creditcard_with_hour.csv
 data/processed_data.pkl
-models/
-*.pkl

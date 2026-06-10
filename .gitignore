@@ -1,0 +1,12 @@
+﻿# Ignore auto-checkpoint and editor files
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Ignore generated artifacts and large files
+fraud analytics.pbix
+CSVs/powerbi_export.csv
+data/creditcard.csv
+data/creditcard_with_hour.csv
+data/processed_data.pkl
+models/
+*.pkl
